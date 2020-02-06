@@ -17,7 +17,10 @@ steps:
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
+    goals: 'clean'
+    pmdRunAnalysis: true
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
-    pmdRunAnalysis: true
+    codeCoverageToolOption: 'jaCoCo'
+    
+    
